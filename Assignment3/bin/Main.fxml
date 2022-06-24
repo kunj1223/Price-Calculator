@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TextField fx:id="txtfldm" disable="true" layoutX="83.0" layoutY="49.0" />
+      <TextField fx:id="txtfldu" disable="true" layoutX="83.0" layoutY="95.0" />
+      <TextField fx:id="txtfldc" disable="true" layoutX="83.0" layoutY="143.0" />
+      <CheckBox fx:id="chkbxM" layoutX="260.0" layoutY="53.0" mnemonicParsing="false" onAction="#chkbxOne" text="Mouse  @$10 each" />
+      <CheckBox fx:id="chkbxU" layoutX="260.0" layoutY="99.0" mnemonicParsing="false" onAction="#chkboxTwo" text="USB @$20 each" />
+      <CheckBox fx:id="chkboxC" layoutX="260.0" layoutY="147.0" mnemonicParsing="false" onAction="#chkBoxThree" text="Charger @$15 each" />
+      <Label layoutX="83.0" layoutY="192.0" text="Subtract Discount:" />
+      <TextField fx:id="txtfldDiscount" layoutX="191.0" layoutY="188.0" />
+      <Button fx:id="bttnSub" layoutX="83.0" layoutY="235.0" mnemonicParsing="false" onAction="#bttnsubmit" text="Submit" />
+      <Button fx:id="btnClr" layoutX="164.0" layoutY="235.0" mnemonicParsing="false" onAction="#bttnClear" text="Clear" />
+      <Button fx:id="btnext" layoutX="244.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnExit" text="Exit" />
+      <TextArea fx:id="txtArea" editable="false" layoutX="64.0" layoutY="279.0" prefHeight="98.0" prefWidth="346.0" />
+   </children>
+</AnchorPane>
